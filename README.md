@@ -1,4 +1,6 @@
 # Webshop-PHP
 Unser Gruppenprojekt für einen PHP Webshop
 
-hier wird unser code gesammelt, sofern ich es hinkriege irgendwie alles auf git zu regeln lol
+Die grobe ordnerstruktur ist soweit angelegt, stand jetzt sind auch die ersten dateien zur Datenbank hinzugefügt.
+
+Im laufe des Tages werden wir unsere ergebnisse hier zusammenführen und das weitere vorgehen besprechen.
