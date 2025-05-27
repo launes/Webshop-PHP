@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="100f5413-f296-43c1-90b3-7cef6d3b2353" name="Changes" comment="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/datenschutz.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/datenschutz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/impressum.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/impressum.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748341853672</updated>
-      <workItem from="1748341854707" duration="7268000" />
+      <workItem from="1748341854707" duration="9294000" />
     </task>
     <task id="LOCAL-00001" summary="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer">
       <option name="closed" value="true" />
@@ -112,7 +115,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748347358543</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer">
+      <option name="closed" value="true" />
+      <created>1748349262344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748349262344</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer">
+      <option name="closed" value="true" />
+      <created>1748349726653</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748349726653</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

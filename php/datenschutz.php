@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <?php include 'header.php'; ?> <!-- Header einbinden -->
+    <?php include 'head.php'; ?> <!-- Header einbinden -->
     <title>Datenschutzerklärung</title>
     <link rel="stylesheet" href="../css/style_datenschutz.css"> <!-- CSS-Datei für das Styling -->
 </head>
