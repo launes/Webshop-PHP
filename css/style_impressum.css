@@ -1,0 +1,75 @@
+/* style_impressum.css */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #0077b6;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+p {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+a {
+    color: #0077b6;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover, a:focus {
+    color: #023e8a;
+    text-decoration: underline;
+}
+
+.container, body > div, body {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #6c757d;}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    h2 {
+        font-size: 1.05rem;
+        margin-top: 1.2rem;
+    }
+    .container, body > div, body {
+        padding: 1rem 0.5rem 2rem 0.5rem;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
