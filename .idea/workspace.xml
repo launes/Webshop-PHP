@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="100f5413-f296-43c1-90b3-7cef6d3b2353" name="Changes" comment="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/datenschutz.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/datenschutz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/impressum.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/impressum.php" afterDir="false" />
-    </list>
+    <list default="true" id="100f5413-f296-43c1-90b3-7cef6d3b2353" name="Changes" comment="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748341853672</updated>
-      <workItem from="1748341854707" duration="9294000" />
+      <workItem from="1748341854707" duration="9611000" />
     </task>
     <task id="LOCAL-00001" summary="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer">
       <option name="closed" value="true" />
@@ -131,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748349726653</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer update">
+      <option name="closed" value="true" />
+      <created>1748351579571</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748351579571</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +187,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer" />
+    <MESSAGE value="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer update" />
   </component>
 </project>
