@@ -1,0 +1,27 @@
+/* Footer allgemein */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+/* Links im Footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}

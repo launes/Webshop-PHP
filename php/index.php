@@ -1,32 +1,29 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>Space Shop</title>
-    <link rel="stylesheet" href="../css/index_stylesheet.css">
-</head>
-<body>
+<?php include 'head.php';?> <!-- Head einbinden -->
+    <head>
+        <title>Space Shop</title>
+        <link rel="stylesheet" href="../css/index_stylesheet.css">
+        <link rel="stylesheet" href="../css/style_header.css">
+        <link rel="stylesheet" href="../css/style_footer.css">
+    </head>
+    <body>
 
-    <!-- Header-Bereich mit Logo, navigationleiste Warenkorb, Account und so, header befindet sich modular in header.php -->
-   <?php 
+    <!-- Header-Bereich mit Logo, Navigation, Warenkorb, Account etc. -->
+        <?php
         include("header.php");
-   ?>
-
-
-
-
-
-
-
+        ?>
 
     <!-- Startseitenbild mit Text -->
-    <section id="hero-image">
-        <h1>Mögliche Überschrift und hero image</h1>
-        <!-- Hier muss noch ein entsprechendes Hero-img eingefügt werden oder eine stylische überschrift mit CSS -->
-    </section>
+        <section id="hero-image">
+            <h1>Mögliche Überschrift und hero image</h1>
+            <!-- Hier muss noch ein entsprechendes Hero-img eingefügt werden oder eine stylische Überschrift mit CSS -->
+        </section>
 
-    <!-- Produktübersicht mit gridlayout, produkte dienen nur als platzhalter damit an css gearbeitet werden kann,
-         Produkte werden später mittels PHP-foreach aus der Datenbank abgefragt und entsprechend im grid erstellt -->
+    <!-- Produktübersicht mit Gridlayout -->
     <main>
         <section id="product-grid">
             <!-- Produkt 1 -->
@@ -56,15 +53,12 @@
                 <h2>Nike TN</h2>
                 <p>€180.00</p>
             </article>
-
-            
         </section>
     </main>
 
-    <!-- footer-Bereich, footer ausgelagert in footer.php -->
-    <?php 
-        include("footer.php");
+    <!-- Footer-Bereich -->
+    <?php
+    include("footer.php");
     ?>
-
-</body>
+    </body>
 </html>
