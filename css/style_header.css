@@ -1,0 +1,135 @@
+/* Grundlegende Gestaltung des Headers */
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Begrüßung & Login/Logout-Button */
+header span {
+    font-size: 1.1rem;
+    color: #333;
+    margin-right: 10px;
+    font-weight: 500;
+}
+header form {
+    display: inline;
+}
+header form button {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.95rem;
+    color: #555;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+header form button:hover {
+    background: #e0e0e0;
+    color: #222;
+}
+header a[href="./login.php"] {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.95rem;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+header a[href="./login.php"]:hover {
+    background: #e0e0e0;
+    color: #222;
+}
+
+/* Logo */
+#logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    order: 2;
+}
+
+/* Navigation */
+nav {
+    order: 1;
+    width: 100%;
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* User-Section (Suche, Account, Warenkorb) */
+#user-section {
+    display: flex;
+    gap: 15px;
+    order: 3;
+    margin-right: 20px;
+}
+#user-section a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    transition: color 0.2s;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+#user-section a:hover {
+    color: #2c3e50;
+    background: #f0f0f0;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    #logo {
+        order: 1;
+        margin: 10px 0;
+    }
+    nav {
+        order: 2;
+        margin: 10px 0;
+    }
+    #user-section {
+        order: 3;
+        margin: 10px 0;
+    }
+    header span, header form, header a[href="./login.php"] {
+        margin-bottom: 10px;
+        display: block;
+    }
+}
