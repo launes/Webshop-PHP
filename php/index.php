@@ -7,6 +7,9 @@ session_start();
 <head>
     <title>Space Shop</title>
     <link rel="stylesheet" href="../css/index_stylesheet.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_footer.css">
+
 </head>
 <body>
 
