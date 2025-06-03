@@ -5,9 +5,12 @@ session_start();
 // Session-Daten leeren: Alle gespeicherten Session-Variablen werden gelöscht
 $_SESSION = [];
 
-// Session-Cookie löschen: Das Cookie, das die Session-ID speichert, wird entfernt
+// Session-Cookie löschen: Das Cookie, das die Session-ID speichert, wird entfernt wenn es verwendet wird
+// ini_get("session.use_cookies") prüft, ob Sessions mit Cookies verwendet werden
 if (ini_get("session.use_cookies")) {
     // Cookie-Parameter abrufen (Pfad, Domain, Sicherheitseinstellungen etc.)
+    // session_get_cookie_params() gibt die aktuellen Cookie-Einstellungen zurück
+    // cookie-Parameter enthalten Informationen wie Pfad, Domain, ob es nur über HTTPS gesendet werden soll und ob es nur per HTTP zugänglich ist
     $params = session_get_cookie_params();
     // Cookie mit abgelaufenem Zeitstempel setzen, um es zu löschen
     setcookie(
@@ -28,7 +31,8 @@ session_destroy();
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta charset="UTF-8">
+        <!-- <meta charset="UTF-8"> -->
+        <?php include 'head.php';?> <!-- Head einbinden -->
         <title>Logout</title>
         <!-- Automatische Weiterleitung nach 10 Sekunden zur Startseite -->
         <meta http-equiv="refresh" content="10;url=index.php">
