@@ -1,5 +1,6 @@
 <?php
 // Funktion zum Herstellen einer Datenbankverbindung
+// Diese Funktion stellt eine Verbindung zur MySQL-Datenbank her und gibt das Verbindungsobjekt zurück
 function erstelleDatenbankverbindung() {
     // Hostname des Datenbankservers (bei XAMPP meistens "localhost")
     $servername = "localhost";
@@ -19,6 +20,7 @@ function erstelleDatenbankverbindung() {
     }
 
     // Zeichensatz der Verbindung auf UTF-8 setzen (wichtig für Umlaute)
+    //set_charset() setzt den Zeichensatz der Verbindung, damit Sonderzeichen korrekt dargestellt werden
     $verbindung->set_charset("utf8");
 
     // Die hergestellte Verbindung zurückgeben
