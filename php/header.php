@@ -1,20 +1,21 @@
 <?php
-// Überprüfen, ob die Session gestartet ist, und falls nicht, sie starten
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 ?>
+<head>
+    <link rel="stylesheet" href="../css/style_header.css">
+</head>
 <header>
     <?php
-    // Überprüfen, ob der Benutzer eingeloggt ist
     if (isset($_SESSION['benutzername'])) {
-        echo '<span>Willkommen, ' . htmlspecialchars($_SESSION["benutzername"]) . '!</span> '; // Begrüßung mit Benutzernamen
-        echo '<form action="./logout.php" method="post" style="display:inline;"> 
+        echo '<span>Willkommen, ' . htmlspecialchars($_SESSION["benutzername"]) . '!</span> ';
+        echo '<form action="./logout.php" method="post" style="display:inline;">
                 <button type="submit">Logout</button>
               </form>';
-    } else { // Wenn der Benutzer nicht eingeloggt ist
-        echo '<span>Willkommen, Gast!</span> '; // Begrüßung für Gäste
-        echo '<a href="./login.php">Login</a>'; // Link zum Login
+    } else {
+        echo '<span>Willkommen, Gast!</span> ';
+        echo '<a href="./login.php">Login</a>';
     }
     ?>
     <div id="logo">SHOP LOGO PLATZHALTER</div>
