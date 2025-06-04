@@ -37,11 +37,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .container > * {
     width: 100%;
     max-width: 800px;
+    text-align: center;
+}
+
+/* Überschriften und Text */
+h1, h2, h3, h4, h5, h6, p, li {
+    text-align: center;
+}
+
+/* Ausnahme für Listen-Elemente, damit die Aufzählungspunkte korrekt ausgerichtet sind */
+ul {
+    text-align: left;
+    display: inline-block;
 }
 
 /* Grid Layout für Bilder */
@@ -53,6 +66,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     padding: 2rem 0;
+    text-align: center;
 }
 
 .image-grid img {

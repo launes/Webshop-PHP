@@ -21,6 +21,7 @@ h2 {
     color: var(--accent-primary);
     margin: 2rem 0 1rem 0;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 p {
@@ -28,12 +29,14 @@ p {
     line-height: 1.7;
     font-size: 1.05rem;
     color: var(--text-secondary);
+    text-align: center;
 }
 
 a {
     color: var(--accent-primary);
     text-decoration: none;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 a:hover, a:focus {
