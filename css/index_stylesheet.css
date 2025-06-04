@@ -1,114 +1,25 @@
-:root {
-    --bg-primary: #1a1a1a;
-    --bg-secondary: #2d2d2d;
-    --text-primary: #e0e0e0;
-    --text-secondary: #b0b0b0;
-    --accent-color: #0077b6;
-    --accent-hover: #023e8a;
-    --border-color: #404040;
-    --card-bg: #2d2d2d;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    line-height: 1.6;
-    min-height: 100vh;
 }
 
 header {
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-color);
-    padding: 1rem 0;
+    border: 1px solid black;
 }
 
 #hero-image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border: none;
-    margin-bottom: 2rem;
+    border: 1px solid black;
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    border: 1px solid black;
 }
 
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
-}
-
-.product {
-    background: var(--card-bg);
-    border-radius: 8px;
-    padding: 1rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: var(--shadow);
-}
-
-.product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.product > img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.product h3 {
-    color: var(--text-primary);
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
-}
-
-.product p {
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-}
-
-.product .price {
-    color: var(--accent-color);
-    font-weight: bold;
-    font-size: 1.1rem;
+.product>img {
+    height: 140px;
+    width: 140px;
 }
 
 footer {
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-    padding: 2rem 0;
-    margin-top: 3rem;
-    border-top: 1px solid var(--border-color);
-}
-
-@media (max-width: 768px) {
-    .products-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 1rem;
-        padding: 0.5rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    #hero-image {
-        height: 300px;
-    }
+    border: 1px solid black;
 }
