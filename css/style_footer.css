@@ -1,27 +1,43 @@
 /* Footer allgemein */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    font-family: Arial, sans-serif;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-top: 1px solid var(--border-color);
 }
 
 footer p {
-    margin: 8px 0;
-    font-size: 1em;
+    margin: 0.8rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Links im Footer */
 footer a {
-    color: #fff;
+    color: var(--text-primary);
     text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
+    margin: 0 1rem;
+    transition: all 0.3s;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
 }
 
 footer a:hover {
-    color: #4CAF50;
-    text-decoration: underline;
+    color: var(--accent-color);
+    background: var(--bg-primary);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1.5rem 1rem;
+    }
+
+    footer a {
+        display: inline-block;
+        margin: 0.5rem;
+    }
 }

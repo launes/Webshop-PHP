@@ -1,135 +1,240 @@
 /* Grundlegende Gestaltung des Headers */
 header {
-    background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px 0;
-    margin-bottom: 20px;
+    background: var(--bg-secondary);
+    box-shadow: var(--shadow);
+    padding: 1rem 2rem;
+    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(45, 45, 45, 0.95);
 }
 
 /* Begrüßung & Login/Logout-Button */
 header span {
     font-size: 1.1rem;
-    color: #333;
-    margin-right: 10px;
+    color: var(--text-primary);
+    margin-right: 1rem;
     font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: var(--bg-primary);
 }
+
 header form {
     display: inline;
 }
+
 header form button {
-    background: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px 10px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
-    color: #555;
-    transition: all 0.2s;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
     cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
+
 header form button:hover {
-    background: #e0e0e0;
-    color: #222;
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2);
 }
+
 header a[href="./login.php"] {
-    background: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px 10px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
-    color: #555;
+    color: var(--text-primary);
     text-decoration: none;
-    transition: all 0.2s;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
+
 header a[href="./login.php"]:hover {
-    background: #e0e0e0;
-    color: #222;
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2);
 }
 
 /* Logo */
 #logo {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #2c3e50;
+    color: var(--text-primary);
     text-align: center;
     flex-grow: 1;
-    margin: 0 20px;
+    margin: 0 2rem;
     order: 2;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#logo:hover {
+    color: var(--accent-color);
+    transform: scale(1.05);
 }
 
 /* Navigation */
 nav {
     order: 1;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    padding: 0.5rem;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1rem;
 }
+
 nav ul li {
     display: inline;
 }
+
 nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: var(--text-secondary);
     font-size: 1.1rem;
-    transition: color 0.2s;
+    transition: all 0.3s ease;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    display: inline-block;
+    position: relative;
 }
+
 nav ul li a:hover {
-    color: #2c3e50;
-    font-weight: 500;
+    color: var(--text-primary);
+    background: var(--bg-secondary);
+    transform: translateY(-2px);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: var(--accent-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 80%;
 }
 
 /* User-Section (Suche, Account, Warenkorb) */
 #user-section {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     order: 3;
-    margin-right: 20px;
+    margin-right: 1rem;
 }
+
 #user-section a {
     text-decoration: none;
-    color: #555;
+    color: var(--text-secondary);
     font-size: 1rem;
-    transition: color 0.2s;
-    padding: 8px 10px;
-    border-radius: 4px;
+    transition: all 0.3s ease;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg-primary);
 }
+
 #user-section a:hover {
-    color: #2c3e50;
-    background: #f0f0f0;
+    color: var(--text-primary);
+    background: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2);
 }
 
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 0;
+        padding: 1rem;
     }
+
     #logo {
         order: 1;
-        margin: 10px 0;
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
     }
+
     nav {
         order: 2;
-        margin: 10px 0;
+        margin: 0.5rem 0;
+        padding: 0.3rem;
     }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    nav ul li a {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+
     #user-section {
         order: 3;
-        margin: 10px 0;
+        margin: 0.5rem 0;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
     }
-    header span, header form, header a[href="./login.php"] {
-        margin-bottom: 10px;
+
+    header span, 
+    header form, 
+    header a[href="./login.php"] {
+        margin: 0.5rem 0;
         display: block;
+        text-align: center;
+        width: 100%;
     }
+
+    header form button,
+    header a[href="./login.php"] {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Animation für aktive Navigation */
+nav ul li a.active {
+    color: var(--accent-color);
+    background: var(--bg-secondary);
+}
+
+nav ul li a.active::after {
+    width: 80%;
+    background: var(--accent-color);
 }
