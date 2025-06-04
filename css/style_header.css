@@ -16,8 +16,9 @@ header {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--accent-primary);
-    text-align: left;
+    text-align: center;
     margin-right: 2rem;
+    margin-left: 20rem;
     order: 1;
 }
 
