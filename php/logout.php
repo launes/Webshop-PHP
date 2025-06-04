@@ -44,7 +44,7 @@ session_destroy();
             <!-- Hinweis auf die automatische Weiterleitung -->
             <p>Sie werden in 10 Sekunden automatisch zur Startseite weitergeleitet.</p>
             <!-- Direktlink zur Startseite -->
-            <p><a href="index.php">Jetzt zurück zur Startseite</a></p>
+            <p><a href="../index.php">Jetzt zurück zur Startseite</a></p>
         </div>
     </body>
 </html>
