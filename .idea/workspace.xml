@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="100f5413-f296-43c1-90b3-7cef6d3b2353" name="Changes" comment="Update für Internetseite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +123,7 @@
       <workItem from="1748958031303" duration="39000" />
       <workItem from="1748958634892" duration="18000" />
       <workItem from="1748960160618" duration="1788000" />
-      <workItem from="1749032647798" duration="1754000" />
+      <workItem from="1749032647798" duration="3160000" />
     </task>
     <task id="LOCAL-00001" summary="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer">
       <option name="closed" value="true" />
@@ -173,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749035090409</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update für Internetseite">
+      <option name="closed" value="true" />
+      <created>1749035940393</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749035940393</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
