@@ -15,12 +15,12 @@ if (session_status() === PHP_SESSION_NONE) {
     if (isset($_SESSION['benutzername'])) {
         // Wenn der Benutzername in der Session gespeichert ist, wird er angezeigt
         echo '<span>Willkommen, ' . htmlspecialchars($_SESSION["benutzername"]) . '!</span> ';
-        echo '<form action="./logout.php" method="post" style="display:inline;"> 
+        echo '<form action="../php/logout.php" method="post" style="display:inline;"> 
                 <button type="submit">Logout</button>
               </form>'; // Logout-Button, der ein Formular verwendet, um die Logout-Funktion auszuführen
     } else { // Wenn der Benutzername nicht in der Session gespeichert ist, wird "Gast" angezeigt
         echo '<span>Willkommen, Gast!</span> ';
-        echo '<a href="./login.php">Login</a>';
+        echo '<a href="../php/login.php">Login</a>';
     }
     ?>
     <div id="logo">SHOP LOGO PLATZHALTER</div>

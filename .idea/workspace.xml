@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="100f5413-f296-43c1-90b3-7cef6d3b2353" name="Changes" comment="index.php und css dateien update">
-      <change beforePath="$PROJECT_DIR$/.idea/Projekt3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Projekt3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_05_2025_14_17_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_05_2025_14_17__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_05_2025_15_00_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_05_2025_15_00__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+    <list default="true" id="100f5413-f296-43c1-90b3-7cef6d3b2353" name="Changes" comment="Update für Internetseite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +96,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programmieren\CBW\PHP\Projekt3" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -127,7 +123,7 @@
       <workItem from="1748958031303" duration="39000" />
       <workItem from="1748958634892" duration="18000" />
       <workItem from="1748960160618" duration="1788000" />
-      <workItem from="1749032647798" duration="853000" />
+      <workItem from="1749032647798" duration="1754000" />
     </task>
     <task id="LOCAL-00001" summary="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer">
       <option name="closed" value="true" />
@@ -169,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748950759483</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update für Internetseite">
+      <option name="closed" value="true" />
+      <created>1749035090409</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749035090409</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +228,7 @@
     <MESSAGE value="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer" />
     <MESSAGE value="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer update" />
     <MESSAGE value="index.php und css dateien update" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.php und css dateien update" />
+    <MESSAGE value="Update für Internetseite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update für Internetseite" />
   </component>
 </project>
