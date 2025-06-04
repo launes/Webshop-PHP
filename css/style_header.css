@@ -11,6 +11,66 @@ header {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* Logo */
+#logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent-primary);
+    text-align: left;
+    margin-right: 2rem;
+    order: 1;
+}
+
+/* Navigation */
+nav {
+    order: 2;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: var(--accent-primary);
+    background: var(--bg-primary);
+}
+
+/* User-Section */
+#user-section {
+    display: flex;
+    gap: 1rem;
+    order: 3;
+}
+
+#user-section a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+#user-section a:hover {
+    color: var(--accent-primary);
+    background: var(--bg-primary);
+}
+
 /* Begrüßung & Login/Logout-Button */
 header span {
     font-size: 1.1rem;
@@ -52,69 +112,6 @@ header a[href="./login.php"]:hover {
     border-color: var(--accent-primary);
 }
 
-/* Logo */
-#logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--accent-primary);
-    text-align: center;
-    flex-grow: 1;
-    margin: 0 2rem;
-    order: 2;
-}
-
-/* Navigation */
-nav {
-    order: 1;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-}
-
-nav ul li a:hover {
-    color: var(--accent-primary);
-    background: var(--bg-primary);
-}
-
-/* User-Section */
-#user-section {
-    display: flex;
-    gap: 1rem;
-    order: 3;
-    margin-right: 2rem;
-}
-
-#user-section a {
-    text-decoration: none;
-    color: var(--text-secondary);
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-
-#user-section a:hover {
-    color: var(--accent-primary);
-    background: var(--bg-primary);
-}
-
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
     header {
@@ -123,11 +120,14 @@ nav ul li a:hover {
     
     #logo {
         order: 1;
-        margin: 1rem 0;
+        margin: 0 0 1rem 0;
+        width: 100%;
+        text-align: center;
     }
     
     nav {
         order: 2;
+        width: 100%;
         margin: 1rem 0;
     }
     
@@ -138,9 +138,9 @@ nav ul li a:hover {
     
     #user-section {
         order: 3;
-        margin: 1rem 0;
-        justify-content: center;
         width: 100%;
+        justify-content: center;
+        margin: 1rem 0;
     }
     
     header span, 

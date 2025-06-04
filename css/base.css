@@ -29,14 +29,26 @@ body {
     min-height: 100vh;
 }
 
+/* Container für Seiteninhalte */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > * {
+    width: 100%;
+    max-width: 800px;
 }
 
 /* Grid Layout für Bilder */
 .image-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
