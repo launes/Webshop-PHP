@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="100f5413-f296-43c1-90b3-7cef6d3b2353" name="Changes" comment="workspace.xml">
-      <change afterPath="$PROJECT_DIR$/db/login.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/register.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/datenschutz.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/datenschutz.php" afterDir="false" />
+    <list default="true" id="100f5413-f296-43c1-90b3-7cef6d3b2353" name="Changes" comment="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer update">
+      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,31 +66,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Manuel",
-    "last_opened_file_path": "D:/Programmieren/CBW/PHP/PHP_A",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Manuel&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programmieren/CBW/PHP/PHP_A&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "repository"
-    ],
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -112,10 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748341853672</updated>
-      <workItem from="1748341854707" duration="10772000" />
-      <workItem from="1748353044345" duration="174000" />
-      <workItem from="1748353371610" duration="648000" />
-      <workItem from="1748410794798" duration="885000" />
+      <workItem from="1748341854707" duration="9611000" />
     </task>
     <task id="LOCAL-00001" summary="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer">
       <option name="closed" value="true" />
@@ -149,15 +139,7 @@
       <option name="project" value="LOCAL" />
       <updated>1748351579571</updated>
     </task>
-    <task id="LOCAL-00005" summary="workspace.xml">
-      <option name="closed" value="true" />
-      <created>1748351763837</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1748351763837</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +193,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer" />
     <MESSAGE value="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer update" />
-    <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Füge Datenschutz- und Impressumsseiten hinzu sowie Header und Footer update" />
   </component>
 </project>
