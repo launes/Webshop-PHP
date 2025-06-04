@@ -2,7 +2,8 @@
 // Session starten, damit wir Daten über mehrere Seiten speichern können
 session_start();
 
-// Die Datei mit der Datenbankverbindung einbinden / __DIR__ ist der Pfad zu diesem Skript
+// Die Datei mit der Datenbankverbindung einbinden
+// __DIR__ ist der Pfad zu diesem Skript
 require_once __DIR__ . '/db_connect.php';
 
 // Ein leeres Array für Fehlermeldungen anlegen
@@ -41,11 +42,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Nur weitermachen, wenn keine Fehler aufgetreten sind
     if (empty($fehlermeldungen)) { // Wenn das Array mit Fehlermeldungen leer ist
-        // Datenbankabfrage vorbereiten, um zu prüfen, ob es den Benutzer schon gibt / selektiert die ID wo E-Mail oder Benutzername übereinstimmt
+        // Datenbankabfrage vorbereiten, um zu prüfen, ob es den Benutzer schon gibt
+        // selektiert die ID wo E-Mail oder Benutzername übereinstimmt
         $abfrage = $verbindung->prepare("SELECT id FROM users WHERE email = ? OR username = ?");
         // Die Eingaben an die Abfrage binden / "ss" steht für "string, string"
         $abfrage->bind_param("ss", $email, $benutzername);
-        // Die Abfrage ausführen / execute() führt die vorbereitete Abfrage aus
+        // Die Abfrage ausführen
+        // execute() führt die vorbereitete Abfrage aus
         $abfrage->execute();
         // Das Ergebnis "puffern", damit wir die Anzahl der gefundenen Zeilen abfragen können / store_result() speichert das Ergebnis der Abfrage in der Abfrage-Variable
         $abfrage->store_result();
@@ -68,7 +71,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Die Werte an die Abfrage binden / "sss" steht für "string, string, string" (Benutzername, E-Mail, Passwort)
         $einfuegen->bind_param("sss", $benutzername, $email, $passwortHash);
 
-        // Die Abfrage ausführen / execute() führt die vorbereitete Abfrage aus
+        // Die Abfrage ausführen
+        // execute() führt die vorbereitete Abfrage aus
         if ($einfuegen->execute()) { // Wenn das Einfügen geklappt hat
             $_SESSION['erfolgsmeldung'] = "Registrierung erfolgreich! Du kannst dich jetzt einloggen."; // Erfolgsmeldung speichern
             header("Location: login.php"); // Zur Login-Seite weiterleiten
