@@ -16,7 +16,7 @@ h2 {
 }
 
 .login-container {
-    max-width: 400px;
+    max-width: 500px;
     margin: 2rem auto;
     padding: 2rem;
     background: var(--bg-secondary);
@@ -149,11 +149,20 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-    form {
+    .login-container {
+        margin: 1rem;
         padding: 1.5rem;
     }
     
-    h2 {
+    .login-container h1 {
         font-size: 1.75rem;
+    }
+    
+    .form-group input {
+        padding: 0.7rem;
+    }
+    
+    .login-button {
+        padding: 0.7rem;
     }
 }
