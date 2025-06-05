@@ -15,6 +15,101 @@ h2 {
     font-size: 2rem;
 }
 
+form {
+    background: var(--bg-secondary);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    width: 100%;
+    max-width: 450px;
+    margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1.5rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: var(--accent-primary);
+    color: var(--text-primary);
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: var(--accent-secondary);
+    transform: translateY(-1px);
+}
+
+div[style*="color:red"] {
+    background: rgba(211, 47, 47, 0.1);
+    color: #ff6b6b !important;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+p {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
 .login-container {
     max-width: 500px;
     margin: 2rem auto;
@@ -77,6 +172,7 @@ h2 {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 1rem;
+    width: 100%;
 }
 
 .login-button:hover {
@@ -111,41 +207,6 @@ h2 {
     margin-bottom: 1rem;
     border: 1px solid var(--accent-primary);
     text-align: center;
-}
-
-div[style*="color:red"] {
-    background: rgba(211, 47, 47, 0.1);
-    color: #ff6b6b !important;
-    padding: 0.75rem;
-    border-radius: 6px;
-    margin: 1rem 0;
-    font-weight: 500;
-    text-align: center;
-}
-
-p {
-    margin-top: 1.5rem;
-    text-align: center;
-    color: var(--text-secondary);
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-}
-
-a {
-    color: var(--accent-primary);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-
-a:hover {
-    color: var(--accent-secondary);
-    text-decoration: underline;
 }
 
 @media (max-width: 480px) {

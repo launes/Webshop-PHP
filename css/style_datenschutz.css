@@ -173,10 +173,11 @@ footer {
     width: 100%;
     border-collapse: collapse;
     margin: 0.5rem 0;
-    background: rgba(148, 137, 121, 0.05);
+    background: rgba(148, 137, 121, 0.1);
     border-radius: 6px;
     overflow: hidden;
     font-size: 0.9rem;
+    border: 1px solid var(--accent-primary);
 }
 
 .datenschutz-section th,
@@ -190,6 +191,10 @@ footer {
 .datenschutz-section th {
     background: rgba(148, 137, 121, 0.2);
     font-weight: 600;
+}
+
+.datenschutz-section tr:last-child td {
+    border-bottom: none;
 }
 
 @media (max-width: 480px) {
