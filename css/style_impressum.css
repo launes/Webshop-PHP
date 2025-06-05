@@ -1,12 +1,14 @@
 /* style_impressum.css */
 
 body {
-    font-family: var(--font-primary);
     background: var(--bg-primary);
-    color: var(--text-primary);
-    margin: 0;
-    padding: 0;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 100vh;
+    margin: 0;
+    padding: 2rem 1rem;
 }
 
 h1 {
@@ -101,31 +103,33 @@ footer {
 }
 
 .impressum-section {
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
     background: rgba(148, 137, 121, 0.1);
-    border-radius: 8px;
+    color: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
     border: 1px solid var(--accent-primary);
 }
 
 .impressum-section h2 {
     color: var(--bg-primary);
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
     font-weight: 600;
 }
 
 .impressum-section p {
     color: var(--bg-primary);
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .impressum-section a {
     color: var(--accent-primary);
     text-decoration: none;
-    transition: all 0.3s ease;
     font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .impressum-section a:hover {
@@ -136,21 +140,22 @@ footer {
 .impressum-section ul {
     list-style-type: none;
     padding-left: 0;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .impressum-section li {
     color: var(--bg-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     padding-left: 1.5rem;
     position: relative;
+    font-size: 0.9rem;
 }
 
 .impressum-section li::before {
     content: "•";
     color: var(--accent-primary);
     position: absolute;
-    left: 0;
+    left: 0.5rem;
 }
 
 @media (max-width: 480px) {
@@ -164,10 +169,15 @@ footer {
     }
     
     .impressum-section {
-        padding: 1.2rem;
+        padding: 0.8rem;
     }
     
     .impressum-section h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    
+    .impressum-section p,
+    .impressum-section li {
+        font-size: 0.85rem;
     }
 }
