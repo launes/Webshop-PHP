@@ -11,7 +11,7 @@ function erstelleDatenbankverbindung() {
 
     // Erstellen eines neuen MySQLi-Objekts für die Verbindung
     // mysqli ist eine PHP-Erweiterung, die für den Zugriff auf MySQL-Datenbanken verwendet wird
-    $verbindung = new mysqli($servername, $username, $password, $dbname);
+    $verbindung = new mysqli('db.be-mons1.bengt.wasmernet.com:3306', '2a1dba357c6580004cacf4221acc', '06842a1d-ba35-7da9-8000-c254363476a9', 'amazon_clone');
 
     // Prüfen, ob die Verbindung geklappt hat
     // connect_error prüft, ob ein Fehler bei der Verbindung aufgetreten ist
