@@ -1,6 +1,7 @@
 /* Grundlegende Gestaltung des Headers */
 header {
-    background: var(--bg-secondary);
+    background: var(--bg-secondary) !important;
+    background-color: var(--bg-secondary) !important;
     box-shadow: 0 4px 15px var(--shadow-color);
     padding: 1.2rem 2rem;
     margin-bottom: 2rem;
@@ -9,6 +10,8 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid var(--accent-primary);
+    position: relative;
+    z-index: 1000;
 }
 
 /* Logo */
