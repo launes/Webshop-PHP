@@ -4,9 +4,9 @@ function erstelleDatenbankverbindung() {
     // Umgebungsvariablen laden
     // getenv() holt den Wert der Umgebungsvariablen, falls sie gesetzt ist
     // Wenn die Umgebungsvariable nicht gesetzt ist, wird ein Standardwert verwendet
-    $servername = getenv('DB_HOST') ?: 'localhost';
-    $username = getenv('DB_USER') ?: 'root';
-    $password = getenv('DB_PASS') ?: '';
+    $servername = getenv('DB_HOST') ?: 'db.be-mons1.bengt.wasmernet.com:3306';
+    $username = getenv('DB_USER') ?: '2a1dba357c6580004cacf4221acc';
+    $password = getenv('DB_PASS') ?: '06842a1d-ba35-7da9-8000-c254363476a9';
     $dbname = getenv('DB_NAME') ?: 'amazon_clone';
 
     // Erstellen eines neuen MySQLi-Objekts für die Verbindung
@@ -27,3 +27,4 @@ function erstelleDatenbankverbindung() {
     return $verbindung;
 }
 ?>
+
