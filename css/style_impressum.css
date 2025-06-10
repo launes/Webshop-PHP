@@ -1,75 +1,183 @@
 /* style_impressum.css */
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f8f9fa;
-    color: #222;
-    margin: 0;
-    padding: 0;
+    background: var(--bg-primary);
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 100vh;
+    margin: 0;
+    padding: 2rem 1rem;
 }
 
 h1 {
     text-align: center;
-    color: #2c3e50;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    color: var(--accent-primary);
+    margin: 2.5rem 0;
     font-size: 2.5rem;
     letter-spacing: 1px;
 }
 
 h2 {
-    color: #0077b6;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    color: var(--accent-primary);
+    margin: 2rem 0 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 p {
     margin: 0 0 1.5rem 0;
     line-height: 1.7;
     font-size: 1.05rem;
+    color: var(--text-secondary);
+    text-align: center;
 }
 
 a {
-    color: #0077b6;
+    color: var(--accent-primary);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 a:hover, a:focus {
-    color: #023e8a;
+    color: var(--accent-secondary);
     text-decoration: underline;
 }
 
-.container, body > div, body {
-    max-width: 700px;
+.container, body > div {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 1rem 3rem 1rem;
-    background: #fff;
+    padding: 2rem;
+    background: var(--bg-secondary);
     border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
+    box-shadow: 0 4px 20px var(--shadow-color);
 }
 
 footer {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    color: var(--text-secondary);
     font-size: 0.9rem;
-    color: #6c757d;}
+}
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .container, body > div {
+        padding: 1.5rem;
+        margin: 1rem;
+        border-radius: 8px;
+    }
+    
     h1 {
         font-size: 2rem;
-        margin-top: 1.2rem;
-        margin-bottom: 1.2rem;
+        margin: 2rem 0;
     }
+    
     h2 {
-        font-size: 1.05rem;
-        margin-top: 1.2rem;
+        font-size: 1.3rem;
+        margin: 1.5rem 0 1rem 0;
     }
-    .container, body > div, body {
-        padding: 1rem 0.5rem 2rem 0.5rem;
-        border-radius: 0;
-        box-shadow: none;
+    
+    p {
+        font-size: 1rem;
+    }
+}
+
+.impressum-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    border: 2px solid var(--accent-primary);
+}
+
+.impressum-container h1 {
+    color: var(--bg-primary);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.impressum-section {
+    background: rgba(148, 137, 121, 0.1);
+    color: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--accent-primary);
+}
+
+.impressum-section h2 {
+    color: var(--bg-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.impressum-section p {
+    color: var(--bg-primary);
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.impressum-section a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.impressum-section a:hover {
+    color: var(--bg-primary);
+    text-decoration: underline;
+}
+
+.impressum-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0.5rem 0;
+}
+
+.impressum-section li {
+    color: var(--bg-primary);
+    margin-bottom: 0.3rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.impressum-section li::before {
+    content: "•";
+    color: var(--accent-primary);
+    position: absolute;
+    left: 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .impressum-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .impressum-container h1 {
+        font-size: 1.75rem;
+    }
+    
+    .impressum-section {
+        padding: 0.8rem;
+    }
+    
+    .impressum-section h2 {
+        font-size: 1rem;
+    }
+    
+    .impressum-section p,
+    .impressum-section li {
+        font-size: 0.85rem;
     }
 }

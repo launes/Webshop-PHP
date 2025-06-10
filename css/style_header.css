@@ -1,135 +1,172 @@
 /* Grundlegende Gestaltung des Headers */
 header {
-    background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px 0;
-    margin-bottom: 20px;
+    background: var(--bg-secondary) !important;
+    background-color: var(--bg-secondary) !important;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    padding: 1.2rem 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-/* Begrüßung & Login/Logout-Button */
-header span {
-    font-size: 1.1rem;
-    color: #333;
-    margin-right: 10px;
-    font-weight: 500;
-}
-header form {
-    display: inline;
-}
-header form button {
-    background: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px 10px;
-    font-size: 0.95rem;
-    color: #555;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-header form button:hover {
-    background: #e0e0e0;
-    color: #222;
-}
-header a[href="./login.php"] {
-    background: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px 10px;
-    font-size: 0.95rem;
-    color: #555;
-    text-decoration: none;
-    transition: all 0.2s;
-}
-header a[href="./login.php"]:hover {
-    background: #e0e0e0;
-    color: #222;
+    border-bottom: 2px solid var(--accent-primary);
+    position: relative;
+    z-index: 1000;
 }
 
 /* Logo */
 #logo {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #2c3e50;
-    text-align: center;
-    flex-grow: 1;
-    margin: 0 20px;
-    order: 2;
+    color: var(--bg-primary);
+    text-align: left;
+    margin-right: 2rem;
+    margin-left: 20rem;
+    order: 1;
+    text-shadow: 2px 2px 4px var(--shadow-color);
 }
 
 /* Navigation */
 nav {
-    order: 1;
-    width: 100%;
-    margin-bottom: 10px;
+    order: 2;
+    flex-grow: 1;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2.5rem;
 }
-nav ul li {
-    display: inline;
-}
+
 nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: var(--bg-primary);
     font-size: 1.1rem;
-    transition: color 0.2s;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    position: relative;
 }
+
 nav ul li a:hover {
-    color: #2c3e50;
+    color: var(--bg-secondary);
+    background: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+/* User-Section */
+#user-section {
+    display: flex;
+    gap: 1.2rem;
+    order: 3;
+    align-items: center;
+}
+
+#user-section a {
+    text-decoration: none;
+    color: var(--bg-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    border: 1px solid var(--accent-primary);
+}
+
+#user-section a:hover {
+    color: var(--bg-secondary);
+    background: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+/* Begrüßung & Login/Logout-Button */
+header span {
+    font-size: 1.1rem;
+    color: var(--bg-primary);
+    margin-right: 1rem;
     font-weight: 500;
 }
 
-/* User-Section (Suche, Account, Warenkorb) */
-#user-section {
-    display: flex;
-    gap: 15px;
-    order: 3;
-    margin-right: 20px;
+header form {
+    display: inline;
+    background: none;
+    padding: 0;
+    box-shadow: none;
 }
-#user-section a {
-    text-decoration: none;
-    color: #555;
-    font-size: 1rem;
-    transition: color 0.2s;
-    padding: 8px 10px;
-    border-radius: 4px;
+
+header form button {
+    background: var(--accent-primary);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    color: var(--bg-primary);
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
-#user-section a:hover {
-    color: #2c3e50;
-    background: #f0f0f0;
+
+header form button:hover {
+    background: var(--bg-primary);
+    color: var(--bg-secondary);
+    transform: translateY(-2px);
+}
+
+header a[href="./login.php"] {
+    background: var(--accent-primary);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    color: var(--bg-primary);
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+header a[href="./login.php"]:hover {
+    background: var(--bg-primary);
+    color: var(--bg-secondary);
+    transform: translateY(-2px);
 }
 
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 0;
+        padding: 1rem;
     }
+    
     #logo {
         order: 1;
-        margin: 10px 0;
+        margin: 0 0 1rem 0;
+        width: 100%;
+        text-align: center;
     }
+    
     nav {
         order: 2;
-        margin: 10px 0;
+        width: 100%;
+        margin: 1rem 0;
     }
+    
+    nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
     #user-section {
         order: 3;
-        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+        margin: 1rem 0;
     }
-    header span, header form, header a[href="./login.php"] {
-        margin-bottom: 10px;
+    
+    header span, 
+    header form, 
+    header a[href="./login.php"] {
+        margin-bottom: 0.5rem;
         display: block;
     }
 }
