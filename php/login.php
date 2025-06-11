@@ -1,17 +1,16 @@
 <?php
-// Session starten, damit wir merken, ob jemand eingeloggt ist
 session_start();
 
 // Prüfen, ob der Benutzer schon eingeloggt ist
 if (isset($_SESSION['benutzer_id'])) { // Wenn die Session-Variable gesetzt ist
-    header("Location: index.php"); // Zur Startseite weiterleiten
+    header("Location: ../index.php"); // Zur Startseite weiterleiten
     exit(); // Skript beenden
 }
 
 // Die Datenbankverbindung einbinden
 // __ DIR__ gibt den Pfad zum aktuellen Verzeichnis zurück, in dem die Datei liegt
 require_once __DIR__ . '/db_connect.php';
-
+include '../db/functions.sql'; // Funktionen für die Datenbankabfragen einbinden
 // Variable für Fehlermeldungen anlegen
 $fehler = '';
 
@@ -51,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             session_regenerate_id(true); // Neue Session-ID generieren
             $_SESSION['benutzer_id'] = $benutzer['id']; // Benutzer-ID in der Session speichern
             $_SESSION['benutzername'] = $benutzer['username']; // Benutzernamen in der Session speichern
-            header("Location: index.php"); // Zur Startseite weiterleiten
+            header("Location: ../index.php"); // Zur Startseite weiterleiten
             exit(); // Skript beenden
         } else { // Wenn das Passwort nicht stimmt
             $fehler = "Falsches Passwort!"; // Fehlermeldung setzen (Tippfehler im Original korrigiert)
