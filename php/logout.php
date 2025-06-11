@@ -35,7 +35,7 @@ session_destroy();
         <?php include 'head.php';?> <!-- Head einbinden -->
         <title>Logout</title>
         <!-- Automatische Weiterleitung nach 10 Sekunden zur Startseite -->
-        <meta http-equiv="refresh" content="10;url=index.php">
+        <meta http-equiv="refresh" content="10;url=../index.php">
         <link rel="stylesheet" href="../css/style_logout.css">
     </head>
     <body>
