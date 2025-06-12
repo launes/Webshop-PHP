@@ -50,3 +50,33 @@ CREATE TABLE cart (
 	
 	PRIMARY KEY( id )
 	);
+	
+-- create orders table
+CREATE TABLE orders (
+    id INT NOT NULL AUTO_INCREMENT,
+    user_id INT,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    address TEXT,
+    phone VARCHAR(20),
+    payment_method VARCHAR(50),
+    total_amount DECIMAL(10, 2),
+    status VARCHAR(20),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    PRIMARY KEY(id),
+    FOREIGN KEY(user_id) REFERENCES users(id)
+);
+
+-- create order_items table
+CREATE TABLE order_items (
+    id INT NOT NULL AUTO_INCREMENT,
+    order_id INT,
+    product_id INT,
+    quantity INT,
+    price DECIMAL(10, 2),
+    
+    PRIMARY KEY(id),
+    FOREIGN KEY(order_id) REFERENCES orders(id),
+    FOREIGN KEY(product_id) REFERENCES products(id)
+);
